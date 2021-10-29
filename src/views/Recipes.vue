@@ -4,6 +4,9 @@
 
 <script>
 export default {
-  name: 'Recipes'
+  name: 'Recipes',
+  created () {
+    document.title = 'SimplyRecipes || Recipes'
+  }
 }
 </script>

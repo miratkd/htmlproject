@@ -1,6 +1,8 @@
 <template>
   <NavBar/>
-  <router-view/>
+  <div class="page">
+    <router-view/>
+  </div>
   <Footer/>
 </template>
 
@@ -17,6 +19,13 @@ export default {
 </script>
 
 <style>
+.page{
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 2rem;
+  min-height: calc( 100vh - ( 6rem + 4rem ));
+}
 *,
 ::after,
 ::before {
