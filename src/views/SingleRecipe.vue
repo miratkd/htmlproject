@@ -1,0 +1,3 @@
+<template>
+  simgle-Recipe
+</template>

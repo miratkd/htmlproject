@@ -4,6 +4,7 @@ import About from '../views/About.vue'
 import Tags from '../views/Tags.vue'
 import Recipes from '../views/Recipes.vue'
 import Contact from '../views/Contact.vue'
+import SingleRecipe from '../views/SingleRecipe.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/single-recipe',
+    name: 'SingleRecipe',
+    component: SingleRecipe
   }
 ]
 
