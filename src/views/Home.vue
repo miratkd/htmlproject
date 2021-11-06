@@ -154,6 +154,11 @@ export default {
   }
 }
 @media screen and (min-width: 1200px) {
-
+  .recipe h5{
+    font-size: 1.15rem;
+  }
+  .recipes-list{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 </style>
