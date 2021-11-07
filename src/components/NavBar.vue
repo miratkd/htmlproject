@@ -17,9 +17,7 @@
           <router-link to="About" class="nav-link">About</router-link>
           <router-link to="Tags" class="nav-link">Tags</router-link>
           <router-link to="Recipes" class="nav-link">Recipes</router-link>
-          <div class="nav-link contact-link">
-            <router-link to="contact" class="btn">Contact</router-link>
-          </div>
+          <ContactVue/>
         </div>
       </div>
     </nav>
@@ -27,9 +25,10 @@
 </template>
 
 <script>
+import ContactVue from '../components/ContactButton.vue'
 export default {
   name: 'NavBar',
-  components: {},
+  components: { ContactVue },
   data () {
     return {
       showLinks: false
