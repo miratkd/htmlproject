@@ -3,10 +3,10 @@
     <div class="tags-containear">
       <h4>Recipes</h4>
       <div class="tags-list">
-        <router-link to="tags">Beef (1)</router-link>
-        <router-link to="tags">BreakFest (2)</router-link>
-        <router-link to="tags">Carrots (3)</router-link>
-        <router-link to="tags">Food (4)</router-link>
+        <router-link to="tags-template">Beef (1)</router-link>
+        <router-link to="tags-template">BreakFest (2)</router-link>
+        <router-link to="tags-template">Carrots (3)</router-link>
+        <router-link to="tags-template">Food (4)</router-link>
       </div>
     </div>
     <RecipesCardsVue/>

@@ -6,6 +6,7 @@ import Recipes from '../views/Recipes.vue'
 import Contact from '../views/Contact.vue'
 import SingleRecipe from '../views/SingleRecipe.vue'
 import Error from '../views/Error.vue'
+import TagsTemplate from '../views/Tags-template.vue'
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: '/:pathMatch(.*)*',
     name: 'Error',
     component: Error
+  },
+  {
+    path: '/tags-template',
+    name: 'TagsTemplates',
+    component: TagsTemplate
   }
 ]
 
