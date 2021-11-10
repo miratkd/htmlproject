@@ -31,7 +31,61 @@
       </article>
     </section>
     <section class="recipe-content">
-
+      <article>
+        <h4>Instructions</h4>
+        <div class="single-instruction">
+          <header>
+            <p>Step 1</p>
+            <div></div>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium asperiores aut nisi nam laborum.</p>
+        </div>
+        <div class="single-instruction">
+          <header>
+            <p>Step 2</p>
+            <div></div>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium asperiores aut nisi nam laborum.</p>
+        </div>
+        <div class="single-instruction">
+          <header>
+            <p>Step 3</p>
+            <div></div>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium asperiores aut nisi nam laborum.</p>
+        </div>
+      </article>
+      <article class="second-column">
+        <div>
+          <h4>
+            ingredients
+          </h4>
+          <p class="single-ingredient">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quod.
+          </p>
+          <p class="single-ingredient">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quod.
+          </p>
+          <p class="single-ingredient">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quod.
+          </p>
+        </div>
+        <div>
+          <h4>tools</h4>
+          <p class="single-tool">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, molestiae?
+          </p>
+          <p class="single-tool">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, molestiae?
+          </p>
+          <p class="single-tool">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, molestiae?
+          </p>
+          <p class="single-tool">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, molestiae?
+          </p>
+        </div>
+      </article>
     </section>
   </div>
 </template>
@@ -71,5 +125,69 @@ export default {
 .recipe-icons h5, .recipe-icons p{
   margin-bottom: 0;
   font-size: 0.85rem;
+}
+.recipes-tags{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.recipes-tags a{
+  background: var(--primary-500);
+  border-radius: 5px;
+  color: white;
+  padding: 0.05rem 0.5rem;
+  margin: 0 0.25rem;
+  text-transform: capitalize;
+}
+.recipe-content{
+  padding: 3rem 0;
+  display: grid;
+  gap: 2rem 5rem;
+}
+.single-instruction header{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.single-instruction header div{
+  height: 2px;
+  background: grey;
+}
+.single-instruction header p{
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--primary-500)
+}
+.single-instruction > p {
+  color: grey;
+}
+.second-column{
+  display: grid;
+  row-gap: 2rem;
+}
+.single-ingredient{
+  border-bottom: 2px solid grey;
+  padding-bottom: 0.75rem;
+  color: grey
+}
+.single-tool{
+  border-bottom: 2px solid grey;
+  padding-bottom: 0.75rem;
+  color: var(--primary-500);
+  text-transform: capitalize;
+}
+
+@media (min-width: 992px) {
+  .recipe-hero{
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+  }
+  .recipe-content{
+    grid-template-columns: 2fr 1fr;
+  }
 }
 </style>
